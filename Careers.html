@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamProject</title>
+    <link rel="icon" type="image/x-icon" href="./Images/logo.png" >
+    <style>
+        body {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: sticky;
+            top: 0px;
+            margin-top: -8px;
+            margin-left: -8px;
+            height: 220px;
+            z-index: 10;
+            background-image: linear-gradient(to left, rgb(150, 150, 212), rgb(232, 219, 219), rgb(166, 219, 166))
+        }
+
+        .title {
+            position: absolute;
+            left: 350px;
+            font-size: 38px;
+            color: rgb(53, 7, 97);
+        }
+
+        .logoleft {
+            position: absolute;
+            left: -80px;
+            top: -15px;
+        }
+
+        .logoright {
+            position: absolute;
+            left: 1000px;
+            top: -15px;
+        }
+
+
+        .tag {
+            position: absolute;
+            left: 450px;
+            top: 62px;
+            color: red;
+        }
+
+        .address {
+            position: absolute;
+            left: 450px;
+            top: 90px;
+        }
+
+        .navigation {
+
+            position: absolute;
+            top: 156px;
+            left: 0px;
+            height: 63px;
+            width: 1280px;
+            background-color: #0F2C59;
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav-menu {
+            list-style-type: none;
+            padding: 10px;
+
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #F8F9FA;
+            font-weight: 900;
+        }
+
+        .nav-link:hover {
+            color: #E5A93C;
+        }
+
+        .footfirstline {
+
+            color: white;
+        }
+
+        footer {
+            background-color: black;
+            height: 80px;
+            padding: 20px;
+            z-index: 10;
+            margin-top: -16px;
+            margin-bottom: -7px;
+            margin-left: -9px;
+        }
+
+        .foot {
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+
+        .footer {
+            margin-top: -20px;
+        }
+
+        main {
+            flex: 1;
+            background-image: linear-gradient(rgba(230, 239, 241, 0.7), rgba(241, 235, 235, 0.927)), url(./Images/watermark.png);
+            position: relative;
+            top: -18px;
+            height: 100%;
+            margin-left: -7px;
+        }
+
+        .maincon>div {
+            width: 320px;
+            height: 450px;
+            border-radius: 30px;
+
+
+        }
+
+        .maincon {
+            margin-top: 20px;
+            width: 1100px;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: center;
+            padding: 80px;
+            gap: 30px;
+        }
+
+        .maths {
+            background-image: linear-gradient(rgba(243, 240, 243, 0.596)), url(./Images/Maths.jpg);
+
+        }
+
+        .science {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.326)), url(./Images/Science.jpg);
+        }
+
+        .social {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.326)), url(./Images/Social.jpg);
+        }
+
+        .programming {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.578)), url(./Images/programming.jpg);
+        }
+
+        .physical {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.715)), url(./Images/sports.jpg);
+        }
+
+        .ai {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.326)), url(./Images/AI.jpg);
+        }
+
+        .maths:hover {
+            transform: perspective(500px) translateZ(8px);
+        }
+
+        .science:hover {
+            transform: perspective(500px) translateZ(8px);
+        }
+
+        .social:hover {
+            transform: perspective(500px) translateZ(8px);
+        }
+
+        .programming:hover {
+            transform: perspective(500px) translateZ(8px);
+        }
+
+        .physical:hover {
+            transform: perspective(500px) translateZ(8px);
+        }
+
+        .ai:hover {
+            transform: perspective(500px) translateZ(8px);
+        }
+
+        .maths div {
+            padding: 25px;
+            font-size: 20px;
+        }
+
+        .science div {
+            padding: 25px;
+            font-size: 20px;
+        }
+
+        .social div {
+            padding: 25px;
+            font-size: 20px;
+        }
+
+        .physical div {
+            padding: 25px;
+            font-size: 20px;
+        }
+
+        .programming div {
+            padding: 25px;
+            font-size: 20px;
+        }
+
+        .ai div {
+            padding: 25px;
+            font-size: 20px;
+        }
+
+        button {
+            margin-left: 100px;
+            margin-top: 10px;
+            padding: 10px;
+            width: 100px;
+            border: none;
+            outline: none;
+            border-radius: 20px;
+            background-color: rgb(249, 173, 32);
+        }
+
+        button:hover {
+            background-color: #0F2C59;
+        }
+
+        button a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Sathurnya Primary And High School</h1>
+        <h3 class="tag">-Knowledge Beyond Textbooks, Values Beyond Fees.</h3>
+        <h5 class="address">Village:AKARAM, Mandal:DUBBAK, District:SIDDIPET Pincode:502108</h5>
+        <div class="logos">
+            <a href="Home.html"><img class="logoleft" src="./Images/logo.png" alt=""></a>
+            <a href="Home.html"><img class="logoright" src="./Images/logo.png" alt=""></a>
+        </div>
+        <nav class="navigation">
+            <ul class="nav-bar">
+                <li class="nav-menu"><a href="Home.html" class="nav-link">HOME</a></li>
+                <li class="nav-menu"><a href="About.html" class="nav-link">ABOUT</a></li>
+                <li class="nav-menu"><a href="Services.html" class="nav-link">SERVICES</a></li>
+                <li class="nav-menu"><a href="Contact.html" class="nav-link">CONTACT</a></li>
+                <li class="nav-menu"><a href="Careers.html" class="nav-link">CAREERS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="maincon">
+
+            <div class="maths">
+                <div>
+                    <h3>Position: Maths Teacher</h3>
+                    <p><b>Experience:</b>&nbsp;Fresher/Experience</p>
+                    <p><b>Skills:</b>&nbsp;Advanced Mathematics</p>
+                    <p><b>Qualification:</b>&nbsp;Any Graudation</p>
+                    <p><b>Location:</b>&nbsp;Nearby Siddipet</p>
+                </div>
+                <button><a href="https://www.naukri.com/mnjuser/homepage" target="_blank">APPLY NOW</a>
+                </button>
+            </div>
+            <div class="science">
+                <div>
+                    <h3>Position: Science Teacher</h3>
+                    <p><b>Experience:</b>&nbsp;Fresher/Experience</p>
+                    <p><b>Skills:</b>&nbsp;Practical Knowledge</p>
+                    <p><b>Qualification:</b>&nbsp;Any Graudation</p>
+                    <p><b>Location:</b>&nbsp;Nearby Siddipet</p>
+                </div>
+                <button><a href="https://www.naukri.com/mnjuser/homepage" target="_blank">APPLY NOW</a>
+                </button>
+
+            </div>
+            <div class="social">
+                <div>
+                    <h3>Position: Social Teacher</h3>
+                    <p><b>Experience:</b>&nbsp;Fresher/Experience</p>
+                    <p><b>Skills:</b>&nbsp;General&History Studies</p>
+                    <p><b>Qualification:</b>&nbsp;Any Graudation</p>
+                    <p><b>Location:</b>&nbsp;Nearby Siddipet</p>
+                </div>
+                <button><a href="https://www.naukri.com/mnjuser/homepage" target="_blank">APPLY NOW</a>
+                </button>
+            </div>
+            <div class="programming">
+                <div>
+                    <h3>Position: Programming Trainer</h3>
+                    <p><b>Experience:</b>&nbsp;Fresher/Experience</p>
+                    <p><b>Skills:</b>&nbsp;Advanced Programming Skills</p>
+                    <p><b>Qualification:</b>&nbsp;Any Graudation</p>
+                    <p><b>Location:</b>&nbsp;Nearby Siddipet</p>
+                </div>
+                <button><a href="https://www.naukri.com/mnjuser/homepage" target="_blank">APPLY NOW</a>
+                </button>
+            </div>
+            <div class="ai">
+                <div>
+                    <h3>Position: AI Trainer</h3>
+                    <p><b>Experience:</b>&nbsp;Fresher/Experience</p>
+                    <p><b>Skills:</b>&nbsp;AI Tools&Automation</p>
+                    <p><b>Qualification:</b>&nbsp;Any Graudation</p>
+                    <p><b>Location:</b>&nbsp;Nearby Siddipet</p>
+                </div>
+                <button><a href="https://www.naukri.com/mnjuser/homepage" target="_blank">APPLY NOW</a>
+                </button>
+            </div>
+            <div class="physical">
+                <div>
+                    <h3>Position: Physical Educational Trainer</h3>
+                    <p><b>Experience:</b>&nbsp;Fresher/Experience</p>
+                    <p><b>Skills:</b>&nbsp;Sports&Games&Athletics</p>
+                    <p><b>Qualification:</b>&nbsp;Any Graudation</p>
+                    <p><b>Location:</b>&nbsp;Nearby Siddipet</p>
+                </div>
+                <button><a href="https://www.naukri.com/mnjuser/homepage" target="_blank">APPLY NOW</a>
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p class="footfirstline">&emsp;&emsp;Direct Admissions Phone / WhatsApp helpline:91+ 9989449764
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                Official inquiry email address:duddedasaikumar22@gmail.com</p>
+            <p class="foot">Campus office hours (e.g., Mon–Sat: 8:30 AM – 4:30 PM)</p>
+            <p class="foot">Copyright text: © 2026 Sathrunya School. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

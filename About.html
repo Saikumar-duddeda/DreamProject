@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamProject</title>
+    <link rel="icon" type="image/x-icon" href="./Images/logo.png" >
+    <style>
+        body {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: sticky;
+            top: 0px;
+            margin-top: -8px;
+            margin-left: -8px;
+            height: 220px;
+            z-index: 10;
+            background-image: linear-gradient(to left, rgb(150, 150, 212), rgb(232, 219, 219), rgb(166, 219, 166))
+        }
+
+        .title {
+            position: absolute;
+            left: 350px;
+            font-size: 38px;
+            color: rgb(53, 7, 97);
+        }
+
+        .logoleft {
+            position: absolute;
+            left: -80px;
+            top: -15px;
+        }
+
+        .logoright {
+            position: absolute;
+            left: 1000px;
+            top: -15px;
+        }
+
+
+        .tag {
+            position: absolute;
+            left: 450px;
+            top: 62px;
+            color: red;
+        }
+
+        .address {
+            position: absolute;
+            left: 450px;
+            top: 90px;
+        }
+
+        .navigation {
+
+            position: absolute;
+            top: 156px;
+            left: 0px;
+            height: 63px;
+            width: 1280px;
+            background-color: #0F2C59;
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav-menu {
+            list-style-type: none;
+            padding: 10px;
+
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #F8F9FA;
+            font-weight: 900;
+        }
+
+        .nav-link:hover {
+            color: #E5A93C;
+        }
+
+        .footfirstline {
+
+            color: white;
+        }
+
+        footer {
+            background-color: black;
+            height: 80px;
+            padding: 20px;
+            z-index: 10;
+            margin-top: -15px;
+            margin-bottom: -7px;
+            margin-left: -9px;
+        }
+
+        .foot {
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+
+        .footer {
+            margin-top: -20px;
+        }
+
+        main {
+            flex: 1;
+            background-image: linear-gradient(rgba(230, 239, 241, 0.7), rgba(241, 235, 235, 0.927)), url(./Images/watermark.png);
+            position: relative;
+            top: -18px;
+            height: 100%;
+            margin-left: -6px;
+        }
+
+        .founder {
+            height: 250px;
+            width: 250px;
+            margin-left: 50px;
+            border: 5px solid rgb(247, 229, 229);
+        }
+
+        .description {
+            position: absolute;
+            left: 350px;
+            top: 80px;
+            height: 210px;
+            width: 900;
+            text-align: justify;
+            padding: 15px;
+            font-family: "Oswald", sans-serif;
+            font-style: oblique;
+            line-height: 20px;
+        }
+
+        .motive {
+            width: 1235px;
+            padding: 10px;
+        }
+
+        .vision {
+            text-align: justify;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 17px;
+            width: 1100;
+            line-height: 20px;
+
+
+
+        }
+
+        .awards {
+            height: 200px;
+            width: 200px;
+
+        }
+
+        .Awards-con {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .Awards-con img {
+            border-radius: 35px;
+
+        }
+
+        .Awards-con>img:hover {
+            transform: perspective(500px) translateZ(30px);
+        }
+
+        .Management-con {
+            width: 1250px;
+            height: 350px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            padding-top: 10px;
+
+        }
+
+        .Management-con h2 {
+            display: grid;
+            justify-items: center;
+        }
+
+        .Management-con img {
+            border-radius: 30px;
+            text-shadow: 20px 20px grey;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Sathurnya Primary And High School</h1>
+        <h3 class="tag">-Knowledge Beyond Textbooks, Values Beyond Fees.</h3>
+        <h5 class="address">Village:AKARAM, Mandal:DUBBAK, District:SIDDIPET Pincode:502108</h5>
+        <div class="logos">
+            <a href="Home.html"><img class="logoleft" src="./Images/logo.png" alt=""></a>
+            <a href="Home.html"><img class="logoright" src="./Images/logo.png" alt=""></a>
+        </div>
+        <nav class="navigation">
+            <ul class="nav-bar">
+                <li class="nav-menu"><a href="Home.html" class="nav-link">HOME</a></li>
+                <li class="nav-menu"><a href="About.html" class="nav-link">ABOUT</a></li>
+                <li class="nav-menu"><a href="Services.html" class="nav-link">SERVICES</a></li>
+                <li class="nav-menu"><a href="Contact.html" class="nav-link">CONTACT</a></li>
+                <li class="nav-menu"><a href="Careers.html" class="nav-link">CAREERS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 style="position: relative; top: -10px; padding: 10px;">FOUNDER</h2>
+        <img class="founder" src="./Images/Passphoto.jpg" alt="">
+
+        <p class="description"> "As an engineering graduate, my journey through modern education made one reality very
+            clear: memorizing
+            textbooks doesn’t prepare a young mind for the real world. At the same time, seeing hardworking, low-
+            and middle-income families struggle under exorbitant school fees convinced me that something had to
+            change.
+            Sathrunya School is my dream project—born out of a commitment to bridge this gap.
+            I founded this school to serve our community, not to run a business.
+            Our focus is to take learning off the printed page and bring it into the real world through curiosity,
+            hands-on exploration, and practical skills. Every child, regardless of family background, deserves
+            access to high-standard education that teaches them how to think, build, and solve real-life problems."
+            <br><br>
+            <b>- Saikumar Duddeda,Founder</b>
+        </p>
+        <div class="motive">
+            <h2>OUR VISION AND MOTIVE</h2>
+            <p class="vision">My vision for establishing Sathrunya School comes directly from reflecting on my own
+                school journey and realizing everything I was held back from achieving because the system was strictly
+                confined to memorizing textbooks, endless notebook writing, and mechanical exam preparation without
+                genuine understanding. During my student years, I constantly felt a deep void where curiosity, practical
+                creativity, and real-world application should have been nurtured, leaving so many natural talents
+                undiscovered simply because they were never tested beyond printed pages. I saw how conventional
+                classrooms conditioned young minds to fear making mistakes instead of encouraging them to dismantle
+                problems, observe mechanisms, and learn by doing. <br><br>This personal realization transformed into my
+                life's
+                core mission: I want to build a truly transformative future for children right from their early
+                foundational stages by breaking away from the outdated routine of passive reading and writing, replacing
+                it with deep, real-time practical exposure where every child has the freedom to touch, experiment,
+                investigate, and explore how the world truly functions. My deepest motive is to ensure that whatever
+                dreams, modern skills, technical confidence, and practical capabilities my generation missed out on or
+                could not achieve during school life will be achieved and mastered by this rising generation. Sathrunya
+                School is built on the unwavering belief that high-quality, practical education must never be treated as
+                an expensive business or a luxury reserved for the privileged few; it is a sacred service dedicated to
+                lifting up children from poor, lower-income, and middle-class backgrounds who carry immense potential
+                but lack access to affordable modern platforms. By keeping our costs minimal, removing financial anxiety
+                from hardworking parents, and transforming the campus into an active laboratory of hands-on discovery,
+                my aim is to cultivate independent thinkers, problem solvers, and leaders who will step into tomorrow
+                with real practical wisdom rather than just another school certificate.</p>
+
+        </div>
+        <h2 style="padding-left: 10px; margin-top: -5px;">AWARDS</h2>
+        <div class="Awards-con">
+            <img class="Awards" src="./Images/award2.jpg" alt="">
+            <img class="Awards" src="./Images/award1.jpg" alt="">
+            <img class="Awards" src="./Images/award3.jpg" alt="">
+        </div>
+        <h2 style="padding-left: 10px; margin-top: 20px;">MANAGEMENT</h2>
+        <div class="Management-con">
+            <div>
+                <img class="CEO" src="./Images/CEO.jpg" alt="" height="250px" width="250px">
+                <h2>CEO</h2>
+            </div>
+            <div>
+                <img class="COO" src="./Images/COO.jpg" alt="" height="250px" width="250px">
+                <h2>COO</h2>
+            </div>
+            <div>
+                <img class="CFO" src="./Images/CFO.jpg" alt="" height="250px" width="250px">
+                <h2>CFO</h2>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class="footer">
+            <p class="footfirstline">&emsp;&emsp;Direct Admissions Phone / WhatsApp helpline:91+ 9989449764
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                Official inquiry email address:duddedasaikumar22@gmail.com</p>
+            <p class="foot">Campus office hours (e.g., Mon–Sat: 8:30 AM – 4:30 PM)</p>
+            <p class="foot">Copyright text: © 2026 Sathrunya School. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
